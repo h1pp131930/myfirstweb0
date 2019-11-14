@@ -5,6 +5,13 @@
     <title></title>
 
     <style>
+    h1
+      {
+      text-align: center;
+      margin: 0px;
+      padding: 50px;
+      border-bottom: 2px solid gray;
+      }
 
     a {
     color:rgb(0,0,0);
@@ -17,6 +24,28 @@
     color:rgb(0,0,0);
     }
 
+    .grid {
+    display: grid;
+    grid-template-columns: 300px 600px 600px;
+    grid-template-rows: 800px;
+    grid-gap: 5px;
+    }
+
+    #navigation {
+      margin: 0px;
+      padding-top: 20px;
+      border-right: 2px solid gray;
+    }
+
+    #image {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    #text {
+      padding-left: 50px;
+    }
+
     </style>
 
   </head>
@@ -24,22 +53,31 @@
 
     <h1><a href="index.html">My Playlist</a></h1>
 
+  <div class="grid">
+    <div id="navigation">
     <ol>
-      <li><a href="1.html" class="halsey">Roman Holiday</a></li>
-      <li><a href="2.html">Before U I Didn't Exist</a></li>
+      <li><a href="1.html" class="halsey">Roman Holiday</a></li><br>
+      <li><a href="2.html">Before U I Didn't Exist</a></li><br>
       <li><a href="3.html">Wraith</a></li>
     </ol>
+    </div>
 
+    <div id="image">
     <h2>Roman Holiday</h2>
     <img src="C:\Users\inha\Desktop\my web/halsey.jpg" alt="Badlands - Halsey">
+    </div>
 
+    <div id="text">
+      <br><br><br>
     <h3>But for now let's get away</h3>
     <h3>On a Roman Holiday</h3>
-
     <li>Alternative Pop/Rock</li>
-    <li>Badlands</li>
+    <li>Badlands</li><br><br>
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/pkzQaFlcizk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
 
   </body>
+
 </html>
